@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webdoitien</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>Form Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>
+                <form id="sotien">
+                    <label><input type="text"></label>
+                </form>
+            </th>
+            <th>
+                <label><select id="countryin">
+                    <option id="VND">Việt Nam Đồng</option>
+                </select></label>
+            </th>
+            <th>
+                <label><select id="countryout">
+                    <option id="USD">USD</option>
+                </select></label>
+            </th>
+            <th>
+                <input type="button" onclick="button()" value="Convert">
+            </th>
+        </tr>
+    </table><br>
+    <p> USD=<span id="y"></span></p>
+<script src="baitapchuyendoitien.js"></script>
+</body>
+</html>
