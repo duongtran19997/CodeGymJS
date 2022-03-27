@@ -1,5 +1,6 @@
- let x = document.getElementById("sotien")
- let y = document.getElementById("y")
- function button() {
-  document.getElementById("y").innerText = parseFloat(document.getElementById("x").value) / 23000;
+ function change() {
+  let a = document.getElementById("sotien").value;
+  let b = document.getElementById("y").innerText;
+  b = a / 23000;
+  document.getElementById("y").innerHTML = b;
  }
