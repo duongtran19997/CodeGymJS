@@ -5,44 +5,44 @@
     <title>Maytinh2</title>
 </head>
 <body>
-    <p><label><input class = "display-box" type = "text" id = "result" disabled /></label></p>
+    <p><label><input class = "display-box" type = "text" id = "input" /></label></p>
     <div class="calculator">
       <table class="number">
         <tr>
             <th colspan="4"></th>
         </tr>
         <tr>
-            <th><label><input type="button" value="("></label></th>
-            <th><label><input type="button" value=")"></label></th>
-            <th><label><input type="button" value="%"></label></th>
-            <th><label><input type="button" value="C" onclick="undo()"></label></th>
+            <th><label><input class="btn" onclick="setOutput('(')" type="button" value="("></label></th>
+            <th><label><input class="btn" onclick="setOutput(')')" type="button" value=")"></label></th>
+            <th><label><input class="btn" onclick="setOutput('%')" type="button" value="%"></label></th>
+            <th><label><input class="del" onclick="clear" type="button" value="C" ></label></th>
         </tr>
         <tr>
-            <th><label><input type="button" value="7"></label></th>
-            <th><label><input type="button" value="8"></label></th>
-            <th><label><input type="button" value="9"></label></th>
-            <th><label><input type="button" value="/"></label></th>
+            <th><label><input class="btn" onclick="setOutput(7)" type="button" value="7"></label></th>
+            <th><label><input class="btn" onclick="setOutput(8)" type="button" value="8"></label></th>
+            <th><label><input class="btn" onclick="setOutput(9)" type="button" value="9"></label></th>
+            <th><label><input class="btn" onclick="setOutput('/')" type="button" value="/"></label></th>
         </tr>
         <tr>
-            <th><label><input type="button" value="4"></label></th>
-            <th><label><input type="button" value="5"></label></th>
-            <th><label><input type="button" value="6"></label></th>
-            <th><label><input type="button" value="*"></label></th>
+            <th><label><input class="btn" onclick="setOutput(4)" type="button" value="4"></label></th>
+            <th><label><input class="btn" onclick="setOutput(5)" type="button" value="5"></label></th>
+            <th><label><input class="btn" onclick="setOutput(6)" type="button" value="6"></label></th>
+            <th><label><input class="btn" onclick="setOutput('*')" type="button" value="*"></label></th>
         </tr>
         <tr>
-            <th><label><input type="button" value="1"></label></th>
-            <th><label><input type="button" value="2"></label></th>
-            <th><label><input type="button" value="3"></label></th>
-            <th><label><input type="button" value="-"></label></th>
+            <th><label><input class="btn" onclick="setOutput(1)" type="button" value="1"></label></th>
+            <th><label><input class="btn" onclick="setOutput(2)" type="button" value="2"></label></th>
+            <th><label><input class="btn" onclick="setOutput(3)" type="button" value="3"></label></th>
+            <th><label><input class="btn" onclick="setOutput('-')" type="button" value="-"></label></th>
         </tr>
         <tr>
-            <th><label><input type="button" value="0"></label></th>
-            <th><label><input type="button" value="."></label></th>
-            <th><label><input type="button" value="=" onclick="eval()"></label></th>
-            <th><label><input type="button" value="+"></label></th>
+            <th><label><input class="btn" onclick="setOutput(0)" type="button" value="0"></label></th>
+            <th><label><input class="btn" onclick="setOutput('.')" type="button" value="."></label></th>
+            <th><label><input class="equal" type="button" onclick="calculator" value="="></label></th>
+            <th><label><input class="btn" onclick="setOutput('+')" type="button" value="+"></label></th>
         </tr>
       </table>
-        <label><input type="button" onclick="clean()" </label>
+        <label><input type="button" id="clear" > AC</label>
         </div>
 <script src="maytinh2.js"></script>
 </body>
