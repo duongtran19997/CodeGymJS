@@ -15,25 +15,27 @@
         <tr>
             <th>
                 <form >
-                    <label><input id="sotien"/></label>
+                    <label><input id="amount"/></label>
                 </form>
             </th>
             <th>
-                <label><select id="countryin">
-                    <option id="VND">Việt Nam Đồng</option>
+                <label><select id="fcurrency">
+                    <option  value="23000">Việt Nam Đồng</option>
+                    <option  value="1">USD</option>
                 </select></label>
             </th>
             <th>
-                <label><select id="countryout">
-                    <option id="USD">USD</option>
+                <label><select id="tcurrency">
+                    <option  value="1">USD</option>
+                    <option  value="23000">Việt Nam Đồng</option>
                 </select></label>
             </th>
             <th>
-                <input type="button" onclick="change()" value="Convert"/>
+                <input type="button" id="result" value="button"/>
             </th>
         </tr>
     </table><br>
-    <p> USD=<span id="y"></span></p>
+    <p><span id="y"></span></p>
 <script src="baitapchuyendoitien.js"></script>
 </body>
 </html>

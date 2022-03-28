@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maytinh2</title>
+</head>
+<body>
+    <p><label><input class = "display-box" type = "text" id = "result" disabled /></label></p>
+    <div class="calculator">
+      <table class="number">
+        <tr>
+            <th colspan="4"></th>
+        </tr>
+        <tr>
+            <th><label><input type="button" value="("></label></th>
+            <th><label><input type="button" value=")"></label></th>
+            <th><label><input type="button" value="%"></label></th>
+            <th><label><input type="button" value="C" onclick="undo()"></label></th>
+        </tr>
+        <tr>
+            <th><label><input type="button" value="7"></label></th>
+            <th><label><input type="button" value="8"></label></th>
+            <th><label><input type="button" value="9"></label></th>
+            <th><label><input type="button" value="/"></label></th>
+        </tr>
+        <tr>
+            <th><label><input type="button" value="4"></label></th>
+            <th><label><input type="button" value="5"></label></th>
+            <th><label><input type="button" value="6"></label></th>
+            <th><label><input type="button" value="*"></label></th>
+        </tr>
+        <tr>
+            <th><label><input type="button" value="1"></label></th>
+            <th><label><input type="button" value="2"></label></th>
+            <th><label><input type="button" value="3"></label></th>
+            <th><label><input type="button" value="-"></label></th>
+        </tr>
+        <tr>
+            <th><label><input type="button" value="0"></label></th>
+            <th><label><input type="button" value="."></label></th>
+            <th><label><input type="button" value="=" onclick="eval()"></label></th>
+            <th><label><input type="button" value="+"></label></th>
+        </tr>
+      </table>
+        <label><input type="button" onclick="clean()" </label>
+        </div>
+<script src="maytinh2.js"></script>
+</body>
+</html>
