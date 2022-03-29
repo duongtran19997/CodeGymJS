@@ -2,8 +2,8 @@
     document.getElementById('input').value += value;
     }
     function calculator(){
-    let input = document.getElementById('input').value;
-      let result= eval(input)
+    let output = document.getElementById('input').value;
+      let result= eval(output);
        document.getElementById('input').value = result;
     }
     function clear(){
