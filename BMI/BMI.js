@@ -1,11 +1,12 @@
-let x = document.getElementById('cannang')
-let y = document.getElementById('chieucao')
-let a = x/(y*y)
+
 
 let click = document.getElementById("nhap")
 click.addEventListener("click",button)
 function button() {
-    document.write("BMI=" + a)
+    let x = document.getElementById('cannang').value
+    let y = document.getElementById('chieucao').value
+    let a = x/(y*2)
+    document.write(+a)
     if (a < 18.5) {
         document.write("hoi gay")
     } else if (18.5 <= a < 25) {
@@ -14,5 +15,7 @@ function button() {
         document.write("so fat")
     } else if (a >= 30) {
         document.write("piggggggggggggg!!")
+    }else {
+        "mày nên đi bệnh viện thay vì mất thời gian ở đây"
     }
 }

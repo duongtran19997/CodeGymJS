@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<div class="text-start">
+    <img src="https://taoanhonline.com/wp-content/uploads/2020/02/anh-nobita-2-1.jpg?v=1582425710" alt="" class="864504" id="image" onclick="changeImage()">
+</div>
+
+<script>
+
+    function changeImage() {
+        let imageEl = document.getElementById("image");
+        if (imageEl.getAttribute('src') == "https://taoanhonline.com/wp-content/uploads/2020/02/anh-nobita-2-1.jpg?v=1582425710") {
+            imageEl.src = "https://taoanhonline.com/wp-content/uploads/2020/02/anh-nobita-19-1.jpg?v=1582425709";
+        } else {
+            imageEl.src = "https://taoanhonline.com/wp-content/uploads/2020/02/anh-nobita-2-1.jpg?v=1582425710";
+        }
+
+        console.log(imageEl.getAttribute('src'))
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dieukien6</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Doanh số tháng này (triệu đồng)')
+    let b = a*0.1
+    let c = a*0.15
+    let d = a*0.2
+    if (a<10){
+        document.write('Doanh số là'+a +'<br>');
+        document.write('Hoa hồng nhận được là'+b+'<br>');
+        document.write('Tổng số tiền thực nhận là'+(a+b));
+    }else if(10<=a && a<20){
+        document.write('Doanh số là'+a +'<br>');
+        document.write('Hoa hồng nhận được là'+c+'<br>');
+        document.write('Tổng số tiền thực nhận là'+(a+c));
+    }else {
+        document.write('Doanh số là'+a +'<br>');
+        document.write('Hoa hồng nhận được là'+d+'<br>');
+        document.write('Tổng số tiền thực nhận là'+(a+d));
+    }
+</script>
+</body>
+</html>
