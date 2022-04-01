@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d50e8051-a7de-4ec4-bf93-8b9fddaacc4c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/while.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/while2.html" afterDir="false" />
-    </list>
+    <list default="true" id="d50e8051-a7de-4ec4-bf93-8b9fddaacc4c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1648775886550</updated>
       <workItem from="1648775888508" duration="1236000" />
+      <workItem from="1648777157612" duration="389000" />
     </task>
     <servers />
   </component>
