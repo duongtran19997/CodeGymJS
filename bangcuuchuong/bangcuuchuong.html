@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bangcuuchuong</title>
+</head>
+<body>
+<table id="bang" border="1px">
+
+</table>
+<script>
+
+    let html= ''
+    for ( i = 2; i<10; i++){
+        html += '<tr>'
+        for (j=1 ; j<=10 ; j++){
+            html += '<td>'+i + 'x'+ j + '=' + (i*j) +'</td>'
+        }
+        html += '</tr>'
+    }
+    document.getElementById('bang').innerHTML = html;
+</script>
+</body>
+</html>

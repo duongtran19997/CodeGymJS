@@ -5,13 +5,23 @@
     <title>Title</title>
 </head>
 <body><script>
-let a;
-do {
-    a = prompt("Nhập vào số từ 1 -> 10");
-    console.log(a);
-} while (a < 1 || a > 10);
 
-alert("Số bạn vừa nhập là " + a)
+        const getRandomIntInclusive = (min, max) => {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        };
+        let min = + prompt('Nhập giới hạn đầu')
+        let max = + prompt('nhập giới hạn sau')
+
+            for (let i = 0; i < 10; i += 1) {
+                let z = console.log(`Random number ${i}: ${getRandomIntInclusive(min, max)}`);
+                let x = +prompt('nhập số dự đoán')
+                if (x == z){
+                    alert('win')
+                }else{
+                    alert('thua')
+                }
+            }
+
 
 </script>
 </body>

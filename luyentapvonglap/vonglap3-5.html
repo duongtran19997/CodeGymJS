@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vonglap3</title>
+</head>
+<body><p id="dayso"></p>
+    <script>
+        let x = 0;
+        let y =+1;
+        let z;
+        let w = 0;
+        for (i=1;i<21;i++){
+            z = x + y;
+            x = y;
+            y = z;
+            document.write(x+';');
+            w += parseInt(z);
+        }
+        document.write(z + '<br>');
+        document.write('tổng bằng:' + w);
+    </script>
+</body>
+</html>
