@@ -5,11 +5,25 @@
     <title>doanso</title>
 </head>
 <body>
-<button onclick="submit"></button>
-    <script>
-let x = +prompt('nhập x')
-let y = +prompt('nhập y')
+<script>
 
-    </script>
+    const getRandomIntInclusive = (min, max) => {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+    let min = + prompt('Nhập giới hạn đầu')
+    let max = + prompt('nhập giới hạn sau')
+
+    for (let i = 0; i < 3; i ++) {
+        let z = console.log(`Random number ${i}: ${getRandomIntInclusive(min, max)}`);
+        let x = +prompt('nhập số dự đoán')
+        if (x === z){
+            alert('win')
+        }else{
+            alert('thua')
+        }
+    }
+
+
+</script>
 </body>
 </html>

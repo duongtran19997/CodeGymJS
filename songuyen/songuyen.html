@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>songuyen</title>
+</head>
+<body>
+<script>
+    function checkPrime2(N) {
+     //let N = +prompt("Nhap N")
+        if (N < 2) {
+            return false;
+        }
+        for (let i = 2; i < N; i++) {
+            if (N % i === 0) {
+                return false; //End
+            }
+        }
+        return true;
+    }
+
+    let a = checkPrime2(15);//false
+    console.log(a)
+    checkPrime2(37);//true
+    checkPrime2(99);//false
+
+    function primeList() {
+        let x = +prompt("Nhap so so nguyen to can in ra");
+        let count = 0;
+        let N = 0;
+        while (count < x) {
+            if (checkPrime2(N) === true) {
+                count++;
+                console.log(N + " la so nguyen to");
+            }
+            N++;
+        }
+    }
+</script>
+</body>
+</html>

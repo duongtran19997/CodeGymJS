@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body><script>
+<body>
+<script>
 
         const getRandomIntInclusive = (min, max) => {
             return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -12,10 +13,10 @@
         let min = + prompt('Nhập giới hạn đầu')
         let max = + prompt('nhập giới hạn sau')
 
-            for (let i = 0; i < 10; i += 1) {
+            for (let i = 0; i < 3; i ++) {
                 let z = console.log(`Random number ${i}: ${getRandomIntInclusive(min, max)}`);
                 let x = +prompt('nhập số dự đoán')
-                if (x == z){
+                if (x === z){
                     alert('win')
                 }else{
                     alert('thua')
