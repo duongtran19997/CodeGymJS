@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuchanhmang</title>
+</head>
+<body>
+<h1>Sample screen:</h1>
+<label><input type="text" id="textvalue"></label>
+<button id="add" onclick="addArray()">add</button>
+<button id="display" onclick="displayArray()">display</button>
+<div id="result"></div>
+<script>
+    let x = 0
+    let array = [];
+    function addArray(){
+        array[x]= document.getElementById('textvalue').value;
+        alert('element ='+ array[x] + 'added at index'+ x);
+        x++;
+        document.getElementById('textvalue').value = '';
+        displayArray();
+    }
+    function displayArray(){
+    let e = '<hr/>'
+        for (let i=0;i< array.length;i++){
+            e += "element " + i + '=' + array[i] + '<br>';
+        }
+        document.getElementById('result').innerHTML = e;
+    }
+</script>
+</body>
+</html>
