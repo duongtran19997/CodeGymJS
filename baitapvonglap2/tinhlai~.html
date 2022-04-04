@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhlainganhang</title>
+</head>
+<body>
+<script>
+    let x = +prompt('nhập số tiền gửi(VND)')
+    let y = +prompt('nhập số tháng gửi')
+    let z = +prompt('nhập số lãi hàng tháng(%)')
+    let sum = ''
+    for(i=1;i<=y;i++){
+        sum = ((x*z/100)+x)
+        x= sum
+    }
+    alert('số tiền tổng là :'+ sum)
+</script>
+</body>
+</html>
